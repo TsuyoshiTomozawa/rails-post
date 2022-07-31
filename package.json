@@ -2,7 +2,7 @@
   "name": "app",
   "private": "true",
   "scripts": {
-	  "build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss ./app/assets/builds/application.css --no-source-map --load-path=node_modules",
+    "build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss ./app/assets/builds/application.css --no-source-map --load-path=node_modules",
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds"
   },
   "dependencies": {
@@ -12,6 +12,7 @@
     "bootstrap": "^5.2.0",
     "bootstrap-icons": "^1.9.1",
     "esbuild": "^0.14.51",
+    "jquery": "^3.6.0",
     "sass": "^1.54.0"
   }
 }

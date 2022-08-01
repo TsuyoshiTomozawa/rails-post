@@ -9,6 +9,8 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     end
 
     test "should get show" do
+        users = User.all
+        pp users
         get user_url @user
         assert_response :success
         assert_template 'users/show'

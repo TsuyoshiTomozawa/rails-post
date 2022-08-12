@@ -1,0 +1,14 @@
+<div id="post-<%= post.id %>" 　class="card">
+
+  <div class="card-header">
+    <div><%= post.user.name %> <span><%= l post.created_at, format: :ymd %></span></div>
+    <div></div>
+
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"><%= post.title %></h5>
+    <p class="card-text"><%= post.body %></p>
+    <%= link_to "Go Post Detail", post, class: "btn btn-primary" %>
+  </div>
+
+</div>

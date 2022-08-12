@@ -7,9 +7,8 @@ Rails.application.routes.draw do
         post 'login', to: 'devise/sessions#create'
         delete 'logout', to: 'devise/sessions#destroy'
     end
-    # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-    # Defines the root path route ("/")
     root "posts#index"
     resources :users, only: %i[show]
+    resources :posts, only: %i[index show new create destroy]
 end

@@ -10,5 +10,5 @@ Rails.application.routes.draw do
 
     root "posts#index"
     resources :users, only: %i[show]
-    resources :posts, only: %i[index show new create destroy]
+    resources :posts
 end
